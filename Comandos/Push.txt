@@ -1,0 +1,85 @@
+estudiante@aula210-21:~$ mv SeguridadDeAndarPorCasa/SeguridadadDeAndarPorCas* Keys/
+estudiante@aula210-21:~$ cd Keys/
+estudiante@aula210-21:~/Keys$ ls
+SeguridadadDeAndarPorCasa  SeguridadadDeAndarPorCasa.pub
+estudiante@aula210-21:~/Keys$ 
+estudiante@aula210-21:~/Keys$ cd ..
+estudiante@aula210-21:~$ git clone git@github.com:180009iessanalberto/SeguridadDeAndarPorCasa.git
+Clonando en 'SeguridadDeAndarPorCasa'...
+git@github.com: Permission denied (publickey).
+fatal: No se pudo leer del repositorio remoto.
+
+Por favor asegúrate de que tengas los permisos de acceso correctos
+y que el repositorio exista.
+estudiante@aula210-21:~$ ssh-add Keys/SeguridadadDeAndarPorCasa
+Identity added: Keys/SeguridadadDeAndarPorCasa (200075@iessanalberto.com)
+estudiante@aula210-21:~$ git clone git@github.com:180009iessanalberto/SeguridadDeAndarPorCasa.git
+Clonando en 'SeguridadDeAndarPorCasa'...
+remote: Enumerating objects: 70, done.
+remote: Counting objects: 100% (70/70), done.
+remote: Compressing objects: 100% (49/49), done.
+remote: Total 70 (delta 29), reused 57 (delta 19), pack-reused 0
+Recibiendo objetos: 100% (70/70), 388.35 KiB | 1.05 MiB/s, listo.
+Resolviendo deltas: 100% (29/29), listo.
+estudiante@aula210-21:~$ cd SeguridadDeAndarPorCasa/
+estudiante@aula210-21:~/SeguridadDeAndarPorCasa$ git status
+En la rama main
+Tu rama está actualizada con 'origin/main'.
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+	modificados:     AyR.html
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+estudiante@aula210-21:~/SeguridadDeAndarPorCasa$ git commit -m
+error: switch `m' requiere un valor
+estudiante@aula210-21:~/SeguridadDeAndarPorCasa$ git commit -m "Cambio erroneo de prueba"
+En la rama main
+Tu rama está actualizada con 'origin/main'.
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+	modificados:     AyR.html
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+estudiante@aula210-21:~/SeguridadDeAndarPorCasa$ git status
+En la rama main
+Tu rama está actualizada con 'origin/main'.
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+	modificados:     AyR.html
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+estudiante@aula210-21:~/SeguridadDeAndarPorCasa$ git add
+Nada especificado, nada agregado.
+ayuda: ¿Tal vez quisiste decir 'git add .'?
+ayuda: Desactiva este mensage ejecutando
+ayuda: "git config advice.addEmptyPathspec false"
+estudiante@aula210-21:~/SeguridadDeAndarPorCasa$ git add .
+estudiante@aula210-21:~/SeguridadDeAndarPorCasa$ git status
+En la rama main
+Tu rama está actualizada con 'origin/main'.
+
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+	modificados:     AyR.html
+
+estudiante@aula210-21:~/SeguridadDeAndarPorCasa$ git commit -m "Cambio erroneo de prueba"
+[main aab3e72] Cambio erroneo de prueba
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+estudiante@aula210-21:~/SeguridadDeAndarPorCasa$ git push origin -u main
+Enumerando objetos: 5, listo.
+Contando objetos: 100% (5/5), listo.
+Compresión delta usando hasta 4 hilos
+Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos: 100% (3/3), 334 bytes | 334.00 KiB/s, listo.
+Total 3 (delta 2), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:180009iessanalberto/SeguridadDeAndarPorCasa.git
+   350609d..aab3e72  main -> main
+Rama 'main' configurada para hacer seguimiento a la rama remota 'main' de 'origin'.
+estudiante@aula210-21:~/SeguridadDeAndarPorCasa$ 
