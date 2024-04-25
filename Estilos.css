@@ -6,19 +6,24 @@
     display:inline-block; 
     border: radius 90px;
     background-color:#F9FAFB; 
-    px-6 pt-2.5 pb-2 
-    text-xs 
-    font-medium 
     uppercase 
-    leading-normal 
-    text-black 
-    shadow-[0_4px_9px_-4px_#F9FAFB] 
-    transition duration-150 ease-in-out 
-    hover:bg-neutral-50 
-    hover:shadow-[0_8px_9px_-9px_#848D9C,0_4px_18px_0_#848D9C] 
-    focus:bg-neutral-50 
-    focus:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C] 
-    focus:outline-none focus:ring-0 
+    leading-normal;
+    box-shadow: 0 4px 9px -4px #F9FAFB;
+    
     active:bg-neutral-50 
     active:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C]
+}
+.button li:hover{
+    transition: duration-150 ease-in-out;
+    background-color:#F9FAFB;
+    box-shadow: 0 8px 9px -9px #848D9C, 0 4px 18px 0 #848D9C;  
+}
+.button li:focus {
+    background-color:#F9FAFB;
+    box-shadow: 0 8px 9px -4px #848D9C, 0 4px 18px 0 #848D9C; 
+    focus:outline-none 
+    focus:ring-0 
+}
+.button li:active {
+    background-color:#e0e0e0;
 }
