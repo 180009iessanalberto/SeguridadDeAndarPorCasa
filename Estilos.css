@@ -4,26 +4,20 @@
 
 .button{
     display:inline-block; 
-    border: radius 90px;
+    border-radius: 90px;
     background-color:#F9FAFB; 
-    uppercase 
-    leading-normal;
-    box-shadow: 0 4px 9px -4px #F9FAFB;
+    text-transform: uppercase;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 8px;
     
-    active:bg-neutral-50 
-    active:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C]
 }
-.button li:hover{
-    transition: duration-150 ease-in-out;
+.button:hover{
+    transition: 150ms ease-in-out;
     background-color:#F9FAFB;
     box-shadow: 0 8px 9px -9px #848D9C, 0 4px 18px 0 #848D9C;  
 }
-.button li:focus {
-    background-color:#F9FAFB;
-    box-shadow: 0 8px 9px -4px #848D9C, 0 4px 18px 0 #848D9C; 
-    focus:outline-none 
-    focus:ring-0 
-}
-.button li:active {
+.button:active {
     background-color:#e0e0e0;
 }

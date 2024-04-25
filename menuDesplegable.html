@@ -1,100 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seguridad de Andar por Casa</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  .navbar {
-    background-color: #333;
-    overflow: hidden;
-  }
-  .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-  }
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: #f2f2f2;
-    padding: 14px 20px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #ddd;
-    color: black;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-</style>
-</head>
-<body>
 
-<div class="navbar">
-  <a href="#">Inicio</a>
-  <div class="dropdown">
-    <button class="dropbtn">Ataques y Errores
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Hardware</a>
-      <a href="#">Software</a>
-      <a href="#">Datos</a>
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">Criptografía
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <!-- Contenido de Criptografía -->
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">Consejos
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <!-- Contenido de Consejos -->
-    </div>
-  </div> 
-</div>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -103,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seguridad de andar por casa</title>
-
+    
+    <link
+      href="Estilos.css"
+      rel="stylesheet" />
     <!-- Roboto font -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
@@ -136,6 +43,103 @@
   <body>
     <!-- TW Elements JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background-color: #F9FAFB;
+        overflow: hidden;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+      .dropdown {
+        float: left;
+        
+      }
+      .dropdown .dropbtn {
+        font-size: 16px;
+        
+        outline: none;
+        color: #f2f2f2;
+        padding: 14px 20px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #ddd;
+        color: black;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #00000000;
+        min-width: 178px;
+        z-index: 1;
+        
+      }
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .dropdown-content a:hover {
+        background-color: #e5e4e4;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+    </head>
+    <body>
+    
+    <div class="navbar">
+      <a class="button" href="#">Inicio</a>
+      <div class="dropdown">
+        <button class="dropbtn">Ataques y Errores
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a class="button" href="#">Hardware</a>
+          <a class="button" href="#">Software</a>
+          <a class="button" href="#">Datos</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Criptografía
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <!-- Contenido de Criptografía -->
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Consejos
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <!-- Contenido de Consejos -->
+        </div>
+      </div> 
+    </div>
+
+
+
 
     <!-- Main navigation container -->
     <header>
@@ -177,10 +181,10 @@
                 class="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row"
                 data-twe-navbar-nav-ref>
                 <!-- link -->
-                <li
+                <li 
                     class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
                     data-twe-nav-item-ref>
-                    <a
+                    <a 
                     class="text-black dark:text-white"
                     aria-current="page"
                     href="index.html"
@@ -195,16 +199,20 @@
                 <li
                     class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
                     data-twe-nav-item-ref>
-                    <a
-                    class="text-black dark:text-white"
-                    aria-current="page"
-                    href="AyR.html"
-                    data-twe-nav-link-ref
-                    ><button
-                    type="button"
-                    class="inline-block rounded-full bg-neutral-50 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#F9FAFB] transition duration-150 ease-in-out hover:bg-neutral-50 hover:shadow-[0_8px_9px_-9px_#848D9C,0_4px_18px_0_#848D9C] focus:bg-neutral-50 focus:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C] focus:outline-none focus:ring-0 active:bg-neutral-50 active:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C]">
-                    Ataques y Errores
-                    </button></a>
+                  <div class="dropdown">
+                      <button
+                      href="AyR.html"
+                      type="button"
+                      class="inline-block rounded-full bg-neutral-50 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#F9FAFB] transition duration-150 ease-in-out hover:bg-neutral-50 hover:shadow-[0_8px_9px_-9px_#848D9C,0_4px_18px_0_#848D9C] focus:bg-neutral-50 focus:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C] focus:outline-none focus:ring-0 active:bg-neutral-50 active:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C]">
+                      Ataques y Errores
+                      </button>
+                      <div class="dropdown-content" >
+                        <a class="button" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-top-left-radius: 20px; border-top-right-radius: 20px;" href="AyR_Hardware.html">Hardware</a>
+                        <a class="button" style="border-radius: 0px;" href="AyR_Software.html">Software</a>
+                        <a class="button" style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border-top-left-radius: 0px; border-top-right-radius: 0px;" href="AyR_Datos.html">Datos</a>
+                      </div>
+                    
+                  </div>
                 </li>
                 <!-- link -->
                 <li
