@@ -1,0 +1,24 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.button{
+    display:inline-block; 
+    border: radius 90px;
+    background-color:#F9FAFB; 
+    px-6 pt-2.5 pb-2 
+    text-xs 
+    font-medium 
+    uppercase 
+    leading-normal 
+    text-black 
+    shadow-[0_4px_9px_-4px_#F9FAFB] 
+    transition duration-150 ease-in-out 
+    hover:bg-neutral-50 
+    hover:shadow-[0_8px_9px_-9px_#848D9C,0_4px_18px_0_#848D9C] 
+    focus:bg-neutral-50 
+    focus:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C] 
+    focus:outline-none focus:ring-0 
+    active:bg-neutral-50 
+    active:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C]
+}
