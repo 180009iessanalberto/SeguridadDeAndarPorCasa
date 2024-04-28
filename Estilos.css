@@ -16,7 +16,7 @@
 .button:hover{
     transition: 150ms ease-in-out;
     background-color:#F9FAFB;
-    box-shadow: 0 8px 9px -9px #848D9C, 0 4px 18px 0 #848D9C;  
+    box-shadow: 0 8px 9px -9px #848D9C, 0 4px 18px -9px #848D9C;  
 }
 .button:active {
     background-color:#e0e0e0;
