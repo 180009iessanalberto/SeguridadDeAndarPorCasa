@@ -11,7 +11,7 @@
     width: auto;
     height: auto;
     padding: 8px;
-    
+    color: black;
 }
 .button:hover{
     transition: 150ms ease-in-out;
