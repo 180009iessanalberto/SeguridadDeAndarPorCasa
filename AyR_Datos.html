@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seguridad de andar por casa</title>
-
+    
+    <link
+      href="Estilos.css"
+      rel="stylesheet" />
     <!-- Roboto font -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
@@ -37,7 +40,7 @@
 
   <body>
     <!-- TW Elements JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>  
 
     <!-- Main navigation container -->
     <header>
@@ -79,17 +82,17 @@
                 class="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row"
                 data-twe-navbar-nav-ref>
                 <!-- link -->
-                <li
+                <li 
                     class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
                     data-twe-nav-item-ref>
-                    <a
+                    <a 
                     class="text-black dark:text-white"
                     aria-current="page"
                     href="index.html"
                     data-twe-nav-link-ref
                     ><button
                     type="button"
-                    class="inline-block rounded-full bg-neutral-50 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#F9FAFB] transition duration-150 ease-in-out hover:bg-neutral-50 hover:shadow-[0_8px_9px_-9px_#848D9C,0_4px_18px_0_#848D9C] focus:bg-neutral-50 focus:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C] focus:outline-none focus:ring-0 active:bg-neutral-50 active:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C]">
+                    class="button">
                     Home
                     </button></a>
                 </li>
@@ -97,16 +100,21 @@
                 <li
                     class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
                     data-twe-nav-item-ref>
-                    <a
-                    class="text-black dark:text-white"
-                    aria-current="page"
-                    href="AyR.html"
-                    data-twe-nav-link-ref
-                    ><button
-                    type="button"
-                    class="inline-block rounded-full bg-neutral-50 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#F9FAFB] transition duration-150 ease-in-out hover:bg-neutral-50 hover:shadow-[0_8px_9px_-9px_#848D9C,0_4px_18px_0_#848D9C] focus:bg-neutral-50 focus:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C] focus:outline-none focus:ring-0 active:bg-neutral-50 active:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C]">
-                    Ataques y Errores
-                    </button></a>
+                  <div class="dropdown">
+                      <button
+                      href="AyR.html"
+                      
+                      class="button">
+                       Ataques y Errores
+                      </button>
+                      <div class="dropdown-content">
+                        <br>
+                        <a class="button" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-top-left-radius: 20px; border-top-right-radius: 20px;" href="AyR_Hardware.html">Hardware</a>
+                        <a class="button" style="border-radius: 0px;" href="AyR_Software.html">Software</a>
+                        <a class="button" style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border-top-left-radius: 0px; border-top-right-radius: 0px;" href="AyR_Datos.html">Datos</a>
+                      </div>
+                    
+                  </div>
                 </li>
                 <!-- link -->
                 <li
@@ -119,7 +127,7 @@
                     data-twe-nav-link-ref
                     ><button
                     type="button"
-                    class="inline-block rounded-full bg-neutral-50 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#F9FAFB] transition duration-150 ease-in-out hover:bg-neutral-50 hover:shadow-[0_8px_9px_-9px_#848D9C,0_4px_18px_0_#848D9C] focus:bg-neutral-50 focus:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C] focus:outline-none focus:ring-0 active:bg-neutral-50 active:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C]">
+                    class="button">
                     Criptografía
                     </button></a>
                 </li>
@@ -134,7 +142,7 @@
                     data-twe-nav-link-ref
                     ><button
                     type="button"
-                    class="inline-block rounded-full bg-neutral-50 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#F9FAFB] transition duration-150 ease-in-out hover:bg-neutral-50 hover:shadow-[0_8px_9px_-9px_#848D9C,0_4px_18px_0_#848D9C] focus:bg-neutral-50 focus:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C] focus:outline-none focus:ring-0 active:bg-neutral-50 active:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C]">
+                    class="button">
                     Consejos
                     </button></a>
                 </li>
@@ -143,7 +151,6 @@
             </div>
         </nav>
     </header>
-    
     <!-- Container for demo purpose -->
 <div class="container my-auto mx-auto md:px-auto">
     <!-- Section: Design Block -->
