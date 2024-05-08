@@ -36,8 +36,22 @@
           preflight: false,
         },
       };
+      function btn(pr) {
+      
+      if(pr == 0) {
+        document.getElementsById("respuesta").innerHTML = ""
+      } else {
+        document.getElementsById("respuesta").innerHTML = "Este es un ejemplo de antivirus que puede evitar este tipo de problemas.";
+      }
+      
+      
+    }
     </script>
-  </head>
+
+  <script>
+    
+  </script>
+</head>
 
   <body>
     <!-- TW Elements JavaScript -->
@@ -331,6 +345,8 @@
                 class="inline-block rounded-full bg-neutral-50 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#F9FAFB] transition duration-150 ease-in-out hover:bg-neutral-50 hover:shadow-[0_8px_9px_-9px_#848D9C,0_4px_18px_0_#848D9C] focus:bg-neutral-50 focus:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C] focus:outline-none focus:ring-0 active:bg-neutral-50 active:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C]">
                 Noticia
                 </button></a>
+
+              
                 <a
                 class="text-black dark:text-white"
                 aria-current="page"
@@ -338,9 +354,26 @@
                 data-twe-nav-link-ref
                 ><button
                 type="button"
+                onclick="btn(1)"
                 class="inline-block rounded-full bg-neutral-50 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#F9FAFB] transition duration-150 ease-in-out hover:bg-neutral-50 hover:shadow-[0_8px_9px_-9px_#848D9C,0_4px_18px_0_#848D9C] focus:bg-neutral-50 focus:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C] focus:outline-none focus:ring-0 active:bg-neutral-50 active:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C]">
                 Seguridad
-                </button></a>
+                </button>
+                </a>
+                <button
+                onclick="btn(1)"
+                type="button"
+                class="inline-block rounded-full bg-neutral-50 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#F9FAFB] transition duration-150 ease-in-out hover:bg-neutral-50 hover:shadow-[0_8px_9px_-9px_#848D9C,0_4px_18px_0_#848D9C] focus:bg-neutral-50 focus:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C] focus:outline-none focus:ring-0 active:bg-neutral-50 active:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C]">
+                Mostrar
+                </button>
+                <div id="respuesta" height="0px">
+  
+                </div>
+                <button
+                onclick="btn(0)"
+                type="button"
+                class="inline-block rounded-full bg-neutral-50 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#F9FAFB] transition duration-150 ease-in-out hover:bg-neutral-50 hover:shadow-[0_8px_9px_-9px_#848D9C,0_4px_18px_0_#848D9C] focus:bg-neutral-50 focus:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C] focus:outline-none focus:ring-0 active:bg-neutral-50 active:shadow-[0_8px_9px_-4px_#848D9C,0_4px_18px_0_#848D9C]">
+                Ocultar
+                </button>
             </div>
           </div>
   
